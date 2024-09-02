@@ -38,7 +38,9 @@ export default function ContactPage() {
             <form
               className={'flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'}
             >
-              <h2 className={'text-4xl text-accent'}>Let's work together</h2>
+              <h2 className={'text-4xl text-accent'}>
+                Let&apos;s work together
+              </h2>
               <p className={'text-white/60'}>
                 Web Development Web DevelopmentWeb DevelopmentWeb DevelopmentWeb
                 DevelopmentWeb
