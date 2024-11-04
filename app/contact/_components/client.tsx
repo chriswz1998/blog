@@ -55,8 +55,12 @@ export const ContactClient = () => {
     try {
       setLoading(true)
       await postMessage(data)
-      route.push('/')
-      toast.success('message sent!')
+      toast.success('message sent!', {
+        duration: 2000 // 控制显示时长
+      })
+      setTimeout(() => {
+        route.push('/')
+      }, 2000) // 1秒延迟
     } catch (e) {
       toast.error('Something went wrong.')
     } finally {
