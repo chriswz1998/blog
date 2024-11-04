@@ -18,35 +18,56 @@ import WorkSliderBtns from '@/components/WorkSliderBtns'
 const projects = [
   {
     num: '01',
-    category: 'frontend',
+    category: 'Boat Visa Ltd.',
     title: 'project 1',
     description:
-      'Web Development Web DevelopmentWeb DevelopmentWeb DevelopmentWeb DevelopmentWeb',
-    stack: [{ name: 'Html 5' }, { name: 'CSS 3' }, { name: 'JavaScript' }],
-    image: '/assets/work/thumb1.png',
-    live: '',
+      'The website for an immigration company, which includes various additional features such as content management and more.',
+    stack: [{ name: 'Next.JS' }, { name: 'Tailwind Css' }, { name: 'Vercel' }],
+    image:
+      'https://res.cloudinary.com/drrxd8q4g/image/upload/v1730678198/y4clspchym4jbj2gqgj0.jpg',
+    live: 'https://boatvisa.ca',
     github: ''
   },
   {
     num: '02',
-    category: 'fullstack',
+    category: 'CMS - Boat Visa Ltd.',
     title: 'project 2',
     description:
-      'Web Development Web DevelopmentWeb DevelopmentWeb DevelopmentWeb DevelopmentWeb',
-    stack: [{ name: 'Html 5' }, { name: 'CSS 3' }, { name: 'JavaScript' }],
-    image: '/assets/work/thumb2.png',
-    live: '',
+      'I built this CMS (Content Management System) using NestJS, MySQL, and Docker, ensuring a scalable and efficient backend architecture. The system is integrated with Clerk for authentication, supporting a secure, invitation-only login mechanism. This combination provides robust user management and seamless access control tailored for advanced content handling',
+    stack: [
+      { name: 'Nest.JS' },
+      { name: 'Prisma' },
+      { name: 'Tailwind Css' },
+      { name: 'Vercel' },
+      { name: 'Clerk' }
+    ],
+    image:
+      'https://res.cloudinary.com/drrxd8q4g/image/upload/v1730678442/nm6vojdbpo3azw44owro.jpg',
+    live: 'https://btym.cabyte.ca',
     github: ''
   },
   {
     num: '03',
-    category: 'fullstack',
+    category: 'Canoebyte studio',
     title: 'project 3',
     description:
-      'Web Development Web DevelopmentWeb DevelopmentWeb DevelopmentWeb DevelopmentWeb',
-    stack: [{ name: 'Html 5' }, { name: 'CSS 3' }, { name: 'JavaScript' }],
-    image: '/assets/work/thumb3.png',
-    live: '',
+      "Our studio's primary focus is helping individuals and businesses build professional and tailored websites that meet their unique needs. We offer comprehensive services that range from designing visually appealing, user-friendly front-end interfaces to developing and deploying secure and scalable back-end solutions. Whether it's creating simple informational sites or complex web applications with advanced functionality, our expertise ensures high-quality results. Additionally, we provide ongoing support and maintenance, ensuring that our clients' websites remain functional, up-to-date, and optimized for performance.",
+    stack: [{ name: 'Next.JS' }, { name: 'Tailwind Css' }, { name: 'Vercel' }],
+    image:
+      'https://res.cloudinary.com/drrxd8q4g/image/upload/v1730707330/phlpgvxb75s2uvucepkn.jpg',
+    live: 'https://cabyte.ca/',
+    github: ''
+  },
+  {
+    num: '04',
+    category: 'My Wordpress',
+    title: 'project 3',
+    description:
+      'Here I record and share some of my daily and technical articles, anyone is welcome to comment!',
+    stack: [{ name: 'Wordpress' }],
+    image:
+      'https://res.cloudinary.com/drrxd8q4g/image/upload/v1730708820/dg7plsxnkoo07ajuuli6.jpg',
+    live: 'https://chris0051.wordpress.com/page/3/',
     github: ''
   }
 ]

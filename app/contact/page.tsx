@@ -1,15 +1,6 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
-import { Input } from '@/components/ui/input'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue
-} from '@/components/ui/select'
-import { Textarea } from '@/components/ui/textarea'
-import { Button } from '@/components/ui/button'
-
+import { ContactClient } from '@/app/contact/_components/client'
+import { Toaster } from 'react-hot-toast'
 const info = [
   {
     icon: <FaPhoneAlt />,
@@ -34,40 +25,7 @@ export default function ContactPage() {
       <div className="container mx-auto">
         <div className={'flex flex-col xl:flex-row gap-[30px]'}>
           <div className={'xl:h-[54%] order-2 xl:order-none'}>
-            <form
-              className={'flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'}
-            >
-              <h2 className={'text-4xl text-accent'}>
-                Let&apos;s work together
-              </h2>
-              <p className={'text-white/60'}>
-                Web Development Web DevelopmentWeb DevelopmentWeb DevelopmentWeb
-                DevelopmentWeb
-              </p>
-              <div className={'grid grid-cols-1 gap-6 md:grid-cols-2'}>
-                <Input type={'firstname'} placeholder={'Firstname'} />
-                <Input type={'lastname'} placeholder={'Lastname'} />
-                <Input type={'email'} placeholder={'Email'} />
-                <Input type={'phone'} placeholder={'Phone'} />
-              </div>
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder={'Select a service'} />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value={'est'}>Web Development</SelectItem>
-                  <SelectItem value={'cst'}>UI/UX Design</SelectItem>
-                  <SelectItem value={'mst'}>Logo Design</SelectItem>
-                </SelectContent>
-              </Select>
-              <Textarea
-                className={'h-[200px]'}
-                placeholder={'type your message here.'}
-              />
-              <Button className={'max-w-40'} size={'md'}>
-                Send message
-              </Button>
-            </form>
+            <ContactClient />
           </div>
           <div
             className={
@@ -94,6 +52,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+      <Toaster />
     </section>
   )
 }

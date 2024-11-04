@@ -4,19 +4,11 @@ import Link from 'next/link'
 const socials = [
   {
     icon: <FaGithub />,
-    path: ''
+    path: 'https://github.com/chriswz1998'
   },
   {
     icon: <FaLinkedinIn />,
-    path: ''
-  },
-  {
-    icon: <FaYoutube />,
-    path: ''
-  },
-  {
-    icon: <FaTwitter />,
-    path: ''
+    path: 'https://www.linkedin.com/in/wang-chris-b393691a7/'
   }
 ]
 

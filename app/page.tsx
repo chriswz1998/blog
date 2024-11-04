@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { FiDownload } from 'react-icons/fi'
 import Socials from '@/components/Socials'
@@ -5,6 +7,15 @@ import Photo from '@/components/Photo'
 import Starts from '@/components/Starts'
 
 export default function Home() {
+  const handleDownload = () => {
+    const link = document.createElement('a')
+    link.href = '/resume/Wang-Resume.pdf'
+    link.download = 'Wang-Resume.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section className={'h-full'}>
       <div className="container mx-auto h-full">
@@ -25,6 +36,7 @@ export default function Home() {
             </p>
             <div className={'flex flex-col xl:flex-row items-center gap-8'}>
               <Button
+                onClick={handleDownload}
                 className={'uppercase flex items-center gap-2'}
                 variant={'outline'}
               >
