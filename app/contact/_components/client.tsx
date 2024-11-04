@@ -55,8 +55,8 @@ export const ContactClient = () => {
     try {
       setLoading(true)
       await postMessage(data)
-      toast.success('message sent!')
       route.push('/')
+      toast.success('message sent!')
     } catch (e) {
       toast.error('Something went wrong.')
     } finally {
