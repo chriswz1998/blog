@@ -8,12 +8,14 @@ import Starts from '@/components/Starts'
 
 export default function Home() {
   const handleDownload = () => {
-    const link = document.createElement('a')
-    link.href = '/resume/Wang-Resume.pdf'
-    link.download = 'Wang-Resume.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    // const link = document.createElement('a')
+    // link.href = '/resume/Wang-Resume.pdf'
+    // link.download = 'Wang-Resume.pdf'
+    // document.body.appendChild(link)
+    // link.click()
+    // document.body.removeChild(link)
+    const pdfUrl = '/resume/Wang-Resume.pdf'
+    window.open(pdfUrl, '_blank')
   }
 
   return (
@@ -33,6 +35,11 @@ export default function Home() {
             <p className={'max-w-[500px] mb-9 text-white/70'}>
               I excel at crafting elegant digital experiences and I am
               proficient in various programming languages and technologies
+            </p>
+            <p className={'max-w-[500px] mb-9 text-accent font-bold'}>
+              The button below has a gradient color effect and a hover effect.
+              The number at the bottom changes dynamically with a delay effect,
+              all designed using Bootstrap and jQuery.
             </p>
             <div className={'flex flex-col xl:flex-row items-center gap-8'}>
               <Button
